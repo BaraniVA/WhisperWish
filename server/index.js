@@ -3,9 +3,10 @@ import cors from 'cors';
 import wishesRouter from './routes/wishes.js';
 import dotenv from 'dotenv';
 
+dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 3000;
-dotenv.config();
+
 // CORS Configuration
 app.use(cors({
   origin: '*',  // Allow all origins (or specify your frontend URL)
